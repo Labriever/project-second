@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hello.web.practice.HelloMapping">
+
+<!-- parameterType은 이전처럼 mapping 파일에 적용해도 되고, 이렇게 직접 폴더를 지정해줘도 괜찮다. -->
+
+<select id="SameNamegetLists" resultType="com.hello.web.practice.HelloVO">
+	select * from commenttest
+</select>
+
+</mapper>

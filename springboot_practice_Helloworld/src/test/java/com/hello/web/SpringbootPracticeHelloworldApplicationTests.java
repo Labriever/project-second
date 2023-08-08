@@ -1,0 +1,13 @@
+package com.hello.web;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringbootPracticeHelloworldApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

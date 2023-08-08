@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hello.web.practice.HelloMapping">
+
+<!-- parameterType은 이전처럼 mapping 파일에 적용해도 되고, 이렇게 직접 폴더를 지정해줘도 괜찮다. -->
+
+<select id="SameNamegetLists" resultType="com.hello.web.practice.HelloVO">
+	select * from commenttest
+</select>
+<!-- 
+<select id="maxNum" resultType="int">
+	select nvl(max(num),0) from board
+</select>
+
+<insert id="insertData" parameterType="com.finalProject.dto.BoardDTO">
+	insert into board (num,name,pwd,email,subject,content,ipAddr,
+	hitCount,created) values (#{num},#{name},#{pwd},#{email},#{subject},
+	#{content},#{ipAddr},0,sysdate)
+</insert>
+
+<select id="getDataCount" parameterType="hashMap" resultType="int">
+	select nvl(count(*),0) from board
+	where ${searchKey} like '%' || #{searchValue} || '%'
+</select>
+
+<update id="updateHitCount" parameterType="int">
+	update board set hitCount=hitCount+1 where num=#{num}
+</update>
+
+<select id="getReadData" parameterType="int" resultType="com.finalProject.dto.BoardDTO">
+	select num,name,pwd,email,subject,content,IpAddr,
+	hitCount,created from board where num=#{num}
+</select>
+
+<update id="updateData" parameterType="com.finalProject.dto.BoardDTO">
+	update board set name=#{name},pwd=#{pwd},email=#{email},
+	subject=#{subject},content=#{content} where num=#{num}
+
+</update>
+
+<delete id="deleteData" parameterType="int">
+	delete board where num=#{num}
+</delete>
+ -->
+
+
+</mapper>
